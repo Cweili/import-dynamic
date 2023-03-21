@@ -17,8 +17,12 @@ const fn = await importDynamic('https://url-of-module', {
   fetchOptions: { // fetch options
     method: 'GET',
   },
+  globals: { // global values
+    globalValue: 1,
+  },
 })
 fn()
 ```
 
-**fetch options** An object containing any custom settings that you want to apply to the request. [MDN Links](https://developer.mozilla.org/en-US/docs/Web/API/fetch#parameters)
+- **fetchOptions:** An object containing any custom settings that you want to apply to the request. [MDN Link](https://developer.mozilla.org/en-US/docs/Web/API/fetch#parameters)
+- **globals:** An object containing global values.
